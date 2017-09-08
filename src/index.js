@@ -1,15 +1,15 @@
-//==Import React==//
 
+// == React == //
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-//==Import CSS Stylesheet==//
 
+// == Styling ==//
 import './Styles/index.css';
 
-//==Import Components==//
+// == Components == //
 
 import App from './Components/App';
 import BaseLayout from './Components/BaseLayout';
@@ -20,16 +20,15 @@ import ShowPost from './Components/ShowPost';
 
 ReactDOM.render(
   <BrowserRouter>
-   <BaseLayout>
-    <Switch>
-       <Route exact path="/" component={App} />
-       <Route path="/create" component={CreatePost} />
-       <Route path="/blogs/:blog" component={ShowPost} />
-       <Route path="/blogs" component={PostList} />
-     </Switch>
-   </BaseLayout>
- </BrowserRouter>
-
-
-  , document.getElementById('root'));
+    <BaseLayout>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/create" component={CreatePost} />
+        <Route path="/blogs/:blog" component={ShowPost} />
+        <Route path="/blogs" component={PostList} />
+      </Switch>
+    </BaseLayout>
+  </BrowserRouter>
+  ,
+document.getElementById('root'));
 registerServiceWorker();
