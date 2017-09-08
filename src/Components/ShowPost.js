@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class ShowPost extends Component {
+export default class ShowPost extends Component {
   constructor(props) {
   super(props);
 
@@ -27,5 +27,3 @@ class ShowPost extends Component {
     )
   }
 }
-
-export default ShowPost;

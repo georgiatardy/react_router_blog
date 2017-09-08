@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class CreatePost extends Component {
+export default class CreatePost extends Component {
   constructor(props) {
     super(props);
 
@@ -60,7 +60,7 @@ class CreatePost extends Component {
         </div>
 
         <div className="form-blog">
-          <label htmlFor="blog">Write your blog:</label>
+          <label htmlFor="blog">Create new Blog:</label>
           <textarea className="form-control" rows="10" name="blog" type="text" value={this.state.blog}onChange={this.handleBlogChange} />
         </div>
 
@@ -69,5 +69,3 @@ class CreatePost extends Component {
     )
   }
 }
-
-export default CreatePost;

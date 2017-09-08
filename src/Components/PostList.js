@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import ShowPost from './ShowPost';
 
-class PostList extends Component {
+export default class PostList extends Component {
   constructor(props) {
     super(props);
 
@@ -42,5 +42,3 @@ class PostList extends Component {
     )
   }
 }
-
-export default PostList;
